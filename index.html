@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="موقع محمد علي الفوتوغرافير، تصوير احترافي، فوتوغرافيا إبداعية، جلسات تصوير شخصية، زفاف، منتجات، فيديوهات."
+    />
+    <meta
+      name="keywords"
+      content="photographer, فوتوغرافير, مصور, محمد علي, تصوير, فوتوغرافيا, جلسات تصوير, زفاف, فيديو"
+    />
+    <meta name="author" content="Mohamed Ali" />
+    <meta name="robots" content="index, follow" />
+
+    <title>Mohamed Ali | Photographer</title>
+
+    <!-- Logo Tab -->
+    <link rel="icon" href="imgs/mainLogo.webp" type="image/x-icon" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Readex+Pro&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="cssBookingNow/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="css/bookingNow.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body onload="typePhotos()">
+    <header>
+      <div class="container">
+        <h5>
+          <a href="#" class="logo"
+            ><img
+              src="imgs/mainLogo.webp"
+              style="
+                width: 100px;
+                margin-top: -36px;
+                margin-bottom: -40px;
+                margin-left: -11px;
+              "
+              alt="Mohamed Ali Photography Logo"
+          /></a>
+        </h5>
+        <ul class="nav" id="nav">
+          <li>
+            <a class="nav-links active" onclick="scrollToHome()" href="#"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="nav-links" onclick="scrollToAboutUs()" href="#"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a class="nav-links" onclick="scrollToPortfolio()" href="#"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a class="nav-links" onclick="scrollToTeams()" href="#">Teams</a>
+          </li>
+          <li>
+            <a class="nav-links" onclick="scrollToContact()" href="#"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div style="display: flex; align-items: center; gap: 22px">
+          <div class="cta-button" style="scale: 0.7">Contact</div>
+          <i
+            style="font-size: 35px"
+            id="menu-icon"
+            class="fa-solid fa-bars menu-icon"
+          ></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro-section" id="Home" style="padding-top: 64px">
+        <div
+          class="container d-flex justify-content-center align-items-center"
+          style="min-height: 100vh"
+        >
+          <div class="main-content">
+            <div>
+              <h1>Mohamed Ali</h1>
+              <span id="jop">Photographer</span>
+            </div>
+            <p dir="rtl">
+              محمد علي مصوّر موهوب يتميز بأسلوبه الإبداعي والفريد في عالم
+              التصوير الفوتوغرافي. منذ بداياته، أظهر شغفًا كبيرًا في التقاط
+              اللحظات بطريقة فنية ومميزة، مما أكسبه شهرة واسعة وتقديرًا كبيرًا
+              في الأوساط الفنية.
+            </p>
+            <button class="cta-button" id="bookNewBtn">احجز الان</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="main" id="aboutUs">
+        <div class="floating-particles">
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+        </div>
+
+        <div class="container" style="position: relative; z-index: 2">
+          <img
+            class="show-animation-y-reverse"
+            src="imgs/mohamedaliAboutUs.webp"
+            alt="Mohamed Ali Portrait"
+            data-aos="zoom-in-right"
+            data-aos-duration="1000"
+            loading="lazy"
+          />
+
+          <div
+            class="content show-animation-x-reverse"
+            data-aos="fade-left"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <h1>Mohamed Ali</h1>
+            <span>Photographer</span>
+            <p dir="rtl">
+              محمد علي ليس مجرد مصوّر، بل هو راوٍ بصري للقصص. بعينه الدقيقة
+              واهتمامه بالتفاصيل، وشغفه الكبير بالتعبير الفني، يلتقط محمد
+              اللحظات التي تتحدث دون كلمات. أسلوبه الإبداعي والمميز جعله يبرز في
+              عالم التصوير الفوتوغرافي. من الصور العفوية إلى المشاهد الساحرة،
+              تعكس أعمال محمد مشاعر ومعاني وجمالًا خاصًا. يؤمن أن لكل صورة
+              حكاية، ومن خلال عدسته يروي تلك الحكايات بطريقة فنية ملهمة. سواء
+              كنت تبحث عن جلسة تصوير احترافية، أو تعاون إبداعي، أو ترغب فقط في
+              إلقاء نظرة على رحلته الفنية — فأنت في المكان الصحيح.
+            </p>
+            <div class="icons" data-aos="fade-up" data-aos-delay="400">
+              <a
+                href="https://facebook.com/yourprofile"
+                target="_blank"
+                title="Facebook Profile"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://wa.me/yourphonenumber"
+                target="_blank"
+                title="WhatsApp Chat"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://instagram.com/yourprofile"
+                target="_blank"
+                title="Instagram Profile"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Portfolio-sec" id="portfolio">
+        <div class="container">
+          <h2 class="Header-section show-animation-y-reverse">Portfolio</h2>
+
+          <div class="buttons">
+            <button
+              class="active-btn-portfolio btn-type show-animation-y-reverse"
+              onclick="typePhotos()"
+            >
+              <i class="fas fa-camera"></i> Photos
+            </button>
+            <button class="btn-type show-animation-y" onclick="typeStories()">
+              <i class="fas fa-images"></i> Stories
+            </button>
+            <button
+              class="btn-type show-animation-y-reverse"
+              onclick="typeVideos()"
+            >
+              <i class="fas fa-video"></i> Videos
+            </button>
+          </div>
+
+          <div id="type" class="show-animation-y">
+            <div class="card-profile">
+              <div id="card-images" class="card-images">
+                
+                <!-- <div id="counter-photo">#1 of (5) photos</div> -->
+              </div>
+
+              <div class="card-buttons">
+                <button id="pre">&lt; pre</button>
+
+                <div class="num-imgs">
+                  <div class="num-img active-icon"></div>
+                  <div class="num-img"></div>
+                  <div class="num-img"></div>
+                  <div class="num-img"></div>
+                  <div class="num-img"></div>
+                </div>
+
+                <button id="next">Next &gt;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="teams-sec" id="teams">
+        <div class="container">
+          <h2 class="Header-section show-animation-x">Our Team</h2>
+
+          <div class="team-grid">
+            <div class="team-card show-animation-x">
+              <div class="team-social">
+                <a
+                  href="https://www.facebook.com/ELSHAKYphotographer"
+                  target="_blank"
+                  title="Facebook Profile"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/mohamedaliphotography/"
+                  target="_blank"
+                  title="Instagram Profile"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://api.whatsapp.com/send?phone=201111627553"
+                  target="_blank"
+                  title="WhatsApp Chat"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </div>
+              <div class="team-avatar">
+                <img
+                  src="imgs/photo-team/mohamedali.webp"
+                  alt="Mohamed Ali"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Mohamed Ali</h3>
+              <div class="team-role">Lead Photographer</div>
+              <p>
+                Experienced photographer with over 10 years in the industry,
+                specializing in wedding and portrait photography with a unique
+                artistic vision.
+              </p>
+              <button class="team-btn">Book Session</button>
+            </div>
+
+            <div class="team-card show-animation-y-reverse">
+              <div class="team-social">
+                <a
+                  href="https://www.facebook.com/maged.magdy.189099"
+                  target="_blank"
+                  title="Facebook Profile"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://instagram.com/yourprofile"
+                  target="_blank"
+                  title="Instagram Profile"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://wa.me/yourphonenumber"
+                  target="_blank"
+                  title="WhatsApp Chat"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </div>
+              <div class="team-avatar">
+                <img
+                  src="imgs/photo-team/magdy.webp"
+                  alt="Magdy Maged"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Magdy Maged</h3>
+              <div class="team-role">Creative Director</div>
+              <p>
+                Creative professional with expertise in conceptual photography
+                and visual storytelling, bringing innovative ideas to every
+                project.
+              </p>
+              <button class="team-btn">Book Session</button>
+            </div>
+
+            <div class="team-card show-animation-x-reverse">
+              <div class="team-social">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100008267614340"
+                  target="_blank"
+                  title="Facebook Profile"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://instagram.com/yourprofile"
+                  target="_blank"
+                  title="Instagram Profile"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://wa.me/yourphonenumber"
+                  target="_blank"
+                  title="WhatsApp Chat"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </div>
+              <div class="team-avatar">
+                <img
+                  src="imgs/photo-team/moataz.webp"
+                  alt="Moataz Gamal"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Moataz Gamal</h3>
+              <div class="team-role">Video Specialist</div>
+              <p>
+                Video production expert specializing in cinematic storytelling
+                and professional video editing for weddings and commercial
+                projects.
+              </p>
+              <button class="team-btn">Book Session</button>
+            </div>
+
+            <div class="team-card show-animation-x-reverse">
+              <div class="team-social">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100008267614340"
+                  target="_blank"
+                  title="Facebook Profile"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://instagram.com/yourprofile"
+                  target="_blank"
+                  title="Instagram Profile"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://wa.me/yourphonenumber"
+                  target="_blank"
+                  title="WhatsApp Chat"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </div>
+              <div class="team-avatar">
+                <img
+                  src="imgs/photo-team/moataz.webp"
+                  alt="Moataz Gamal"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Moataz Gamal</h3>
+              <div class="team-role">Video Specialist</div>
+              <p>
+                Video production expert specializing in cinematic storytelling
+                and professional video editing for weddings and commercial
+                projects.
+              </p>
+              <button class="team-btn">Book Session</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-sec" id="contact">
+        <div class="container">
+          <div
+            class="contact-content show-animation-x"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <h2>Contact Us</h2>
+            <p>
+              Get in touch with us for any inquiries, support, or collaboration
+              opportunities. We're here to help and would love to hear from you.
+            </p>
+            <form class="input-form">
+              <input
+                type="text"
+                placeholder="Full Name"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Your Message"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                required
+              />
+              <button type="submit" data-aos="fade-up" data-aos-delay="400">
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div
+            class="info show-animation-x-reverse"
+            data-aos="fade-left"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
+            <h3>Contact Info</h3>
+            <div class="info-email">
+              <i class="fa-solid fa-envelope"></i>
+              <h4>mohamedali@gmail.com</h4>
+            </div>
+            <div class="info-phone">
+              <i class="fa-solid fa-phone"></i>
+              <h4>+20 1013 68 1500</h4>
+            </div>
+            <div class="info-address">
+              <i class="fa-solid fa-location-dot"></i>
+              <h4>Cairo, Egypt<br />Downtown Area</h4>
+            </div>
+            <div class="info-date">
+              <i class="fa-solid fa-clock"></i>
+              <h4>Available<br />09:00 - 21:00</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer-sec">
+      <div class="container">
+        <div class="created">
+          <div class="developer-info ahmed">
+            <i class="fa-solid fa-laptop-code"></i>
+            <a
+              style="text-decoration: none"
+              href="https://www.facebook.com/ahmed.mohamed.842606"
+              target="_blank"
+              ><h5>Ahmed Mohamed</h5></a
+            >
+          </div>
+          <div class="developer-info mohamed">
+            <i class="fa-solid fa-code"></i>
+            <h5>Mohamed</h5>
+          </div>
+        </div>
+
+        <div class="social">
+          <a
+            href="https://facebook.com/yourprofile"
+            target="_blank"
+            title="Facebook Profile"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://wa.me/yourphonenumber"
+            target="_blank"
+            title="WhatsApp Chat"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a
+            href="https://instagram.com/yourprofile"
+            target="_blank"
+            title="Instagram Profile"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://github.com/yourprofile"
+            target="_blank"
+            title="GitHub Profile"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          &copy; 2025 جميع الحقوق محفوظة - تم التطوير بواسطة Ahmed Mohamed &
+          Mohamed
+        </p>
+      </div>
+    </footer>
+    
+    <script src="js/Home/main.js"></script>
+  </body>
+</html>

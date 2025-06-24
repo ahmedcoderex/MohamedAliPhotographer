@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, rgba(0, 0, 0), rgba(0, 0, 0)),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23333"/><circle cx="75" cy="75" r="1" fill="%23333"/><circle cx="50" cy="10" r="0.5" fill="%23444"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  padding: 80px 0;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(0, 0, 0), rgba(0, 0, 0)),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23333"/><circle cx="75" cy="75" r="1" fill="%23333"/><circle cx="50" cy="10" r="0.5" fill="%23444"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #f4a726, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 20px rgba(244, 167, 38, 0.5));
+  }
+  to {
+    filter: drop-shadow(0 0 40px rgba(244, 167, 38, 0.8));
+  }
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-bottom: 40px;
+}
+
+.albums-section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #f4a726;
+}
+
+.albums-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.album-card {
+  background: linear-gradient(145deg, #2a2a2a, #1e1e1e);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.album-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #f4a726, #ffd700);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.album-card:hover::before {
+  opacity: 0.1;
+}
+
+.album-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(244, 167, 38, 0.2);
+}
+
+.type-package {
+  width: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.type-package img {
+  width: 100%;
+}
+
+.album-title {
+  font-size: 1.8rem;
+  color: #f4a726;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.album-description {
+  color: #cccccc;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.price-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.original-price {
+  font-size: 1.1rem;
+  color: #888;
+  text-decoration: line-through;
+  margin-bottom: 5px;
+}
+
+.discounted-price {
+  font-size: 2rem;
+  color: #f4a726;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.discount-badge {
+  background: linear-gradient(45deg, #ff4757, #ff6b7a);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.features-list {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.features-list li {
+  color: #cccccc;
+  margin-bottom: 8px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.features-list li::before {
+  content: "✓";
+  color: #f4a726;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+}
+
+.book-btn {
+  background: linear-gradient(45deg, #f4a726, #ffd700);
+  color: #1a1a1a;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.book-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(244, 167, 38, 0.3);
+}
+
+.packages-section {
+  background: linear-gradient(135deg, rgba(0, 0, 0), rgba(0, 0, 0)),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23333"/><circle cx="75" cy="75" r="1" fill="%23333"/><circle cx="50" cy="10" r="0.5" fill="%23444"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  padding: 80px 0;
+  border-radius: 30px;
+  margin: 40px 0;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.package-card {
+  background: linear-gradient(145deg, #333333, #252525);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.package-card:hover {
+  transform: scale(1.05);
+}
+
+.package-title {
+  font-size: 1.5rem;
+  color: #f4a726;
+  margin-bottom: 15px;
+}
+
+.package-price {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.contact-btn {
+  background: linear-gradient(45deg, #25d366, #128c7e);
+  color: white;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(37, 211, 102, 0.3);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .albums-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .album-card {
+    padding: 20px;
+  }
+}
+
+
